@@ -23,7 +23,7 @@
     text-transform: uppercase;
     width: 100%;
     z-index: 1;
-    position: ;
+    position: relative;
 }
 
 .col-md-4{
@@ -37,9 +37,16 @@
 
 .move{
     display: inline-block;
-    margin-left: 9%;
+    margin-left: 1%;
     margin-top: 3%;
+    margin-bottom: 5%;
+    width: 29%;
+    height: 55%;
+}
 
+#move2{
+    margin-left: 25%;
+    padding-top: 3%;
 }
 
 .background{
@@ -48,7 +55,23 @@
 
 .design{
     box-shadow: 7px 8px 17px 0 rgba(0,0,0,.2);
+    position: relative;
 }
+
+.back{
+    background-color: black; 
+    opacity: 0.8; 
+    width: 33%; 
+    height: 65%; 
+    margin-top: -35%; 
+    margin-left: 22%; 
+    color: green;
+    font-size: 40px; 
+    font-weight: 900; 
+    padding: 1% 0 0 1%;
+}
+
+
 
 
 navbar a{
@@ -407,4 +430,115 @@ navbar .tab-highlighter{
 
 
 
+
+
+
+.box{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color:  white;
+    border-radius:3px;
+    padding:60px 100px;
+}
+.input-container{
+    position:relative;
+    margin-bottom:25px;
+}
+.input-container label{
+    position:absolute;
+    top:0px;
+    left:0px;
+    font-size:16px;
+    color: black;    
+    pointer-events:none;
+    transition: all 0.5s ease-in-out;
+    margin: 0 0 0 4px;
+    font-family: 'Dancing Script', cursive;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:80%;
+  padding:8px 0 5px 0px;
+  margin: 0 0 0 4px;
+  font-size:16px;
+  color: black;
+  font-size: 18px;
+}
+.input-container input:focus{ 
+ border:none;   
+ outline:none;
+ border-bottom:1px solid #e74c3c;   
+}
+.btn{
+    color:#fff;
+    background-color:#4eef32;
+    outline: none;
+    border: 0;
+    color: #fff;
+    padding:10px 20px 0 4px;
+    text-transform:uppercase;
+    margin-top: 50px;
+    border-radius:2px;
+    cursor:pointer;
+    position:relative;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+    top:-9px;
+    font-size:18px;
+    
+}
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 

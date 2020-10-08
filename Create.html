@@ -59,7 +59,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="Contact.html">Contact Us</a></li>
         <li><a href="Book.html">Book Appointment</a></li>
-        <li><a href="Help.html">Help</a></li>
+        <li><a href="Help.html">Gallery</a></li>
       </ul>
       <div class="tab-highlighter"></div>
     </div>
@@ -72,17 +72,82 @@
 	<body>
     
 
-    <div class="card move design" style="width: 400px;">
+    <div class="card move design" id= "move2" style="padding-top: 7%;">
       <div class="card-body">
-        <p class="card-text"> mm </p>  
+
+        <form method="POST" action="connect.php" name="myForm" onsubmit="return validateForm()">
+  
+  <div class="input-container" >
+    <input type="text"/ name="UN" id="UN">
+    <label>Username</label>    
+  </div>
+  <div class="input-container">
+    <input type="Password"/ name="Pass" id="Pass" >
+    <label>Password</label>   
+  </div>
+  <div class="input-container" style="visibility: hidden;">
+    <input type="Password"/ name="Pass" id="Pass" >
+    <label>Password</label>   
+  </div>
+  <div class="input-container" style="visibility: hidden;">
+    <input type="Password"/ name="Pass" id="Pass" >
+    <label>Password</label>   
+  </div>
+ 
+  
+
+ 
+<form method="POST" action="connect.php" name="nxtForm" onsubmit="return en()">
+        <div class="title">
+             <button class ="btn btn-outline-primary" input type="submit" value="Submit" />Check on Enquiry</button>
+             <a href=".back">Sign Up</a>
+        </div>
+      </form>
+        
       </div>
     </div>
 
-     <div class="card move design" style="width: 400px;">
+     <div class="card move design" style="padding-top: 4%;" >
       <div class="card-body">
-        <p class="card-text"> mmm </p>  
+        <form method="POST" action="connect.php" name="myForm" onsubmit="return validateForm()">
+  
+  <div class="input-container" >
+    <input type="text"/ name="fullName" id="fullName">
+    <label>Full Name</label>    
+  </div>
+  <div class="input-container">
+    <input type="number"/ name="num" id="num" >
+    <label>Number</label>   
+  </div>
+  <div class="input-container">   
+    <input type="email" name="EM" id="EM" />
+    <label>Email</label>
+  </div>
+  <div class="input-container">   
+    <input type="text" name="UN" id="UN" />
+    <label>Username</label>
+  </div>
+   <div class="input-container">   
+    <input type="Password" name="Pass" id="Pass" />
+    <label>Password</label>
+  </div>
+ 
+<form method="POST" action="connect.php" name="nxtForm" onsubmit="return en()">
+        <div class="title">
+             <button class ="btn btn-outline-primary" input type="submit" value="Submit" />Sign Up</button>
+             <a href="#move2">Login</a>
+        </div>
+      </form>
       </div>
     </div>
+  </form>
+
+     <div class="card design back">
+      <div class="card-body">
+        <p > COLNE VALLEY.ORG </p>
+      </div>
+    </div>
+
   
 	 <footer class="footer">bbbb</footer>
 	</body>
