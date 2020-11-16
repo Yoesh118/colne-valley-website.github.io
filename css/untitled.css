@@ -71,8 +71,9 @@
     padding: 1% 0 0 1%;
 }
 
-
-
+#move3{
+    background-color: blue;
+}
 
 navbar a{
     font-size: 22px;
